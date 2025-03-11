@@ -62,6 +62,21 @@ Script'i çalıştırmak için:
 python takvimwallpaper.py
 ```
 
+## başlangıçta çalıştırma
+Aşağıdaki BAT dosyası içeriğini "takvimwallpaper.bat" şeklinde kaydedebilirsiniz. Bu dosya, bilgisayar açılışında Python script'inizi çalıştıracaktır:
+```bash
+@echo off
+REM Gerekirse 10 saniye bekle (sistem ve ağ bağlantısının hazır olması için)
+timeout /t 10 /nobreak
+
+REM Python'un PATH'e ekli olduğundan emin olun. Değilse tam yolunu yazın.
+python "C:\py\takvimwallpaper.py"
+```
+Dosyayı açılır menüdeki Başlangıç klasörüne kopyalayın:
+Çalıştır (Win + R) komutuna %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup yazın ve Enter'a basın.
+Açılan klasöre "takvimwallpaper.bat" dosyasını yapıştırın.
+Böylece bilgisayar açıldığında BAT dosyası otomatik olarak çalışacak ve script'iniz güncel masaüstü arka planını ayarlayacaktır.
+
 ## Ekran Görüntüsü
 
 Aşağıda oluşturulan masaüstü arka planının örnek görüntüsü bulunmaktadır:
